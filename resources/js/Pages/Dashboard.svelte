@@ -1,7 +1,7 @@
-<script lang="ts">
+<script>
     import AuthenticatedLayout from "../Layouts/AuthenticatedLayout.svelte";
 
-    let name: string = "John Doe";
+    let name = "John Doe";
 </script>
 
 <svelte:head>

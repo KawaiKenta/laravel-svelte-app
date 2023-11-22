@@ -67,9 +67,7 @@
         <div class="block mt-4">
             <label class="flex items-center">
                 <Checkbox name="remember" bind:checked={$form.remember} />
-                <span class="ml-2 text-sm text-gray-600"
-                    >Remember me</span
-                >
+                <span class="ml-2 text-sm text-gray-600">Remember me</span>
             </label>
         </div>
 

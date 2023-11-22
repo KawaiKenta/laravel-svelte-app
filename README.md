@@ -84,16 +84,21 @@ $ curl -s "https://laravel.build/{application-name}?with=pgsql" | bash
 
 $ cd {application-name}
 
-Dockerコンテナ起動
+# Dockerコンテナ起動
 
 $ ./vendor/bin/sail up -d
 
-Breezeのインストール
+# Breezeのインストール
 
 $ ./vendor/bin/sail composer require tapansharma/breeze-svelte --dev
 
 $ ./vendor/bin/sail artisan breeze:install
 
-Breezeの設定
+# マイグレーションコマンド実行
+$ ./vendor/bin/sail artisan migrate
+
+# Viteの開発サーバー起動
+$ ./vendor/bin/sail npm install
+$ ./vendor/bin/sail npm run dev
 
 ```
